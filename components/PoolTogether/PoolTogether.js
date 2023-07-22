@@ -1,4 +1,4 @@
-import styles from './Pooltogether.module.css'
+import styles from "./PoolTogether.module.css";
 
 const Pooltogether = () => {
     return <div>Pool Together</div>;
