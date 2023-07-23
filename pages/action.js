@@ -52,7 +52,7 @@ const action = () => {
         abi: DAIABI,
         functionName: "allowance",
         args: [
-            "0xd61F7B3Bb748A2bFdb25bE1968B54Ab2D29944fC",
+            "0xbB430cD78bf6fBe7499bb7A7f1B00C1C36C12FeD",
             "0x2269B354e87361145456ad5Ce3E0BAB93Ed1Ed6a",
         ],
         watch: false,
@@ -80,7 +80,7 @@ const action = () => {
         );
 
         const configDeposit = await prepareWriteContract({
-            address: "0xd61F7B3Bb748A2bFdb25bE1968B54Ab2D29944fC",
+            address: "0xbB430cD78bf6fBe7499bb7A7f1B00C1C36C12FeD",
             abi: Account6551ABI,
             functionName: "executeCall",
             args: [
@@ -110,7 +110,7 @@ const action = () => {
         );
 
         const configApprove = await prepareWriteContract({
-            address: "0xd61F7B3Bb748A2bFdb25bE1968B54Ab2D29944fC",
+            address: "0xbB430cD78bf6fBe7499bb7A7f1B00C1C36C12FeD",
             abi: Account6551ABI,
             functionName: "executeCall",
             args: [
@@ -125,25 +125,26 @@ const action = () => {
     }
 
     async function finishRound() {
-        const configApprove = await prepareWriteContract({
+        const configFinishRound = await prepareWriteContract({
             address: "0x2269B354e87361145456ad5Ce3E0BAB93Ed1Ed6a",
             abi: RegistryABI,
             functionName: "finishRound",
-            args: [
-                "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063",
-                0,
-                approveCalldata,
-            ],
+            args: [30, [15, 15], true],
         });
 
-        const { hash } = await writeContract(configApprove);
+        const { hash } = await writeContract(configFinishRound);
         console.log(hash);
     }
 
     return (
         <div className={styles.container}>
             <div className={styles.connect}>
-                <button className={styles.buttony}>Finish Round</button>
+                <button
+                    onClick={() => finishRound()}
+                    className={styles.buttony}
+                >
+                    Finish Round
+                </button>
 
                 <Web3Button />
             </div>
