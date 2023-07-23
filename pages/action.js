@@ -53,7 +53,7 @@ const action = () => {
         functionName: "allowance",
         args: [
             "0xbB430cD78bf6fBe7499bb7A7f1B00C1C36C12FeD",
-            "0x2269B354e87361145456ad5Ce3E0BAB93Ed1Ed6a",
+            "0xed2Be3F0347D422a9C4C9177E354cE06C045dEf0",
         ],
         watch: false,
     });
@@ -70,7 +70,7 @@ const action = () => {
 
     async function SendDeposit() {
         const poolTogether6551 = new ethers.Contract(
-            "0x2269B354e87361145456ad5Ce3E0BAB93Ed1Ed6a",
+            "0xed2Be3F0347D422a9C4C9177E354cE06C045dEf0",
             RegistryABI,
             provider
         );
@@ -84,7 +84,7 @@ const action = () => {
             abi: Account6551ABI,
             functionName: "executeCall",
             args: [
-                "0x2269B354e87361145456ad5Ce3E0BAB93Ed1Ed6a",
+                "0xed2Be3F0347D422a9C4C9177E354cE06C045dEf0",
                 0,
                 depositCalldata,
             ],
@@ -104,7 +104,7 @@ const action = () => {
         const approveCalldata = DAIcontract.interface.encodeFunctionData(
             "approve",
             [
-                "0x2269B354e87361145456ad5Ce3E0BAB93Ed1Ed6a",
+                "0xed2Be3F0347D422a9C4C9177E354cE06C045dEf0",
                 "99999999999999999999999999999999999",
             ]
         );
@@ -126,7 +126,7 @@ const action = () => {
 
     async function finishRound() {
         const configFinishRound = await prepareWriteContract({
-            address: "0x2269B354e87361145456ad5Ce3E0BAB93Ed1Ed6a",
+            address: "0xed2Be3F0347D422a9C4C9177E354cE06C045dEf0",
             abi: RegistryABI,
             functionName: "finishRound",
             args: [30, [15, 15], true],
