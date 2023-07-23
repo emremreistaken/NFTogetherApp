@@ -15,7 +15,7 @@ Accounts(
         tokenId: {_eq: "2"}
       }, 
       blockchain: polygon, 
-      limit: 50
+      limit: 1
     }
   ) {
     Account {
@@ -31,7 +31,10 @@ const AccountChoosing = ({ clickedNFTs }) => {
     const handleNavigation = () => {
         router.push({
             pathname: "/action",
-            query: { account: JSON.stringify(Acc6551?.Accounts?.Account) },
+            query: {
+                account: JSON.stringify(Acc6551?.Accounts?.Account),
+                nft: NFTDetails.address,
+            },
         });
     };
 
