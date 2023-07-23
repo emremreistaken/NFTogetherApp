@@ -7,6 +7,454 @@
     text-align: center;
 }
 
+.winningChance {
+    position: absolute;
+    top: 141px;
+    left: 22px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.depositedBalance {
+    position: absolute;
+    left: 496px;
+    top: 71px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.DAI {
+    position: absolute;
+    left: 80px;
+    top: 15px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.daiLogo {
+    position: absolute;
+    left: 28px;
+    top: 17px;
+}
+
+.winningChanceCount {
+    position: absolute;
+    left: 454px;
+    top: 144px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.balance {
+    position: absolute;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.75;
+    left: 14px;
+    top: 72px;
+}
+
+.actionContainer {
+    background-color: #409;
+    min-height: 100vh; /* viewport height */
+    width: 100vw; /* viewport width */
+}
+
+.colorShade1 {
+    position: absolute;
+    margin-left: -150px;
+    width: 425.609px;
+    height: 425.609px;
+    border-radius: 486px;
+    background: #a9df37;
+    filter: blur(75px);
+}
+
+.colorShade2 {
+    position: absolute;
+    width: 486px;
+    height: 486px;
+    margin-left: 15px;
+    margin-top: 900px;
+    border-radius: 486px;
+    background: #a9df37;
+    filter: blur(75px);
+}
+
+.colorShade3 {
+    position: absolute;
+    width: 302px;
+    height: 302px;
+    border-radius: 302px;
+    background: #63df37;
+    filter: blur(75px);
+    margin-top: 695px;
+    margin-left: 600px;
+}
+
+.colorShade4 {
+    position: absolute;
+    width: 262.528px;
+    height: 262.528px;
+    border-radius: 302px;
+    background: #63df37;
+    filter: blur(75px);
+    margin-left: 514px;
+    margin-top: 58px;
+}
+
+.colorShade5 {
+    position: absolute;
+    width: 425.609px;
+    height: 425.609px;
+    border-radius: 302px;
+    background: #63df37;
+    filter: blur(75px);
+    margin-left: 1062px;
+    margin-top: 684px;
+}
+
+.colorShade5 {
+    position: absolute;
+    width: 425.609px;
+    height: 425.609px;
+    border-radius: 425.609px;
+    background: #40b616;
+    filter: blur(75px);
+    margin-left: 1050px;
+    margin-top: 583px;
+}
+
+.welcome {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 55px;
+    left: 104px;
+    width: 298px;
+    height: 68px;
+    border-radius: 9px;
+    background-color: rgb(169, 223, 55, 0.7);
+    color: #3b0082;
+    font-family: Manrope;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.finishIt {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 904px;
+    top: 55px;
+    border-radius: 9px;
+    background-color: rgb(169, 223, 55, 0.7);
+    width: 208px;
+    height: 47px;
+    color: #3b0082;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.leftBox {
+    position: absolute;
+    top: 194px;
+    left: 104px;
+    width: 444.432px;
+    height: 721.133px;
+    border-radius: 9px;
+    background: rgb(147, 124, 181, 0.5);
+}
+
+.bonusOdds {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 58.8px;
+    top: 24px;
+    border-radius: 9px;
+    background: rgb(54, 0, 122, 0.4);
+    width: 317.183px;
+    height: 64.593px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 0px 11px 0px rgba(24, 0, 48, 0.8);
+    font-family: Manrope;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.colName1 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 45px;
+    top: 221px;
+    width: 135.936px;
+    height: 69.414px;
+    border-radius: 9px;
+    background: rgb(169, 223, 55, 0.5);
+}
+
+.leftInnerBox {
+    position: absolute;
+    border-radius: 9px;
+    border: 5px solid #cfcb00;
+    background: rgb(147, 124, 181, 0.5);
+    width: 426.124px;
+    height: 697.995px;
+    left: 7.71px;
+    top: 9.64px;
+}
+
+.upToTen1 {
+    position: absolute;
+    color: #1b003c;
+    left: 220px;
+    top: 145px;
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.upToTen2 {
+    position: absolute;
+    color: #1b003c;
+    left: 220px;
+    top: 349px;
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.depositApe {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 101.229px;
+    height: 39.527px;
+    left: 291px;
+    top: 612px;
+    border-radius: 9px;
+    background: rgb(124, 174, 189, 0.5);
+}
+
+.pooledPrize {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 76px;
+    top: 66px;
+    border-radius: 9px;
+    background: rgb(0, 0, 0, 0.2);
+    width: 540.078px;
+    height: 240.48px;
+    color: #cfcb00;
+    font-family: Manrope;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.tokenType {
+    position: absolute;
+    left: 460px;
+    top: 200px;
+    color: #cfcb00;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.max {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 496px;
+    top: 242px;
+    border-radius: 9px;
+    background: rgb(34, 139, 172, 0.8);
+    width: 99.198px;
+    height: 49.098px;
+    flex-shrink: 0;
+}
+
+.apeLogo {
+    position: absolute;
+    top: 618px;
+    left: 35.5px;
+}
+
+.deposit {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 165px;
+    top: 238px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 9px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 210.42px;
+    height: 65.13px;
+}
+
+.rightDetails {
+    position: absolute;
+    left: 76px;
+    top: 325px;
+    border-radius: 9px;
+    background: rgb(34, 139, 172, 0.2);
+    width: 540.078px;
+    height: 328.656px;
+}
+
+.rightBox {
+    position: absolute;
+    left: 699px;
+    top: 194px;
+    border-radius: 9px;
+    background: rgb(54, 0, 122, 0.7);
+    width: 692.288px;
+    height: 721.133px;
+    flex-shrink: 0;
+}
+
+.ape {
+    position: absolute;
+    left: 72px;
+    top: 620px;
+    color: #1b003c;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.support {
+    position: absolute;
+    color: #1b003c;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    left: 35px;
+    top: 581px;
+}
+
+.colName2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 45px;
+    top: 427px;
+    width: 135.936px;
+    height: 69.414px;
+    border-radius: 9px;
+    background: rgb(169, 223, 55, 0.5);
+}
+
+.tenBox {
+    position: absolute;
+    left: 204px;
+    top: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 179.319px;
+    height: 129.187px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: rgb(124, 174, 189, 0.5);
+    color: #ede927;
+    font-family: Manrope;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.tenBox1 {
+    position: absolute;
+    left: 204px;
+    top: 396px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 179.319px;
+    height: 129.187px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    background: rgb(124, 174, 189, 0.5);
+    color: #ede927;
+    font-family: Manrope;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.colorShade6 {
+    position: absolute;
+    width: 425.609px;
+    height: 425.609px;
+    border-radius: 425.609px;
+    background: #40b616;
+    filter: blur(75px);
+    margin-left: 1050px;
+    margin-bottom: 583px;
+}
+
 .connect {
     position: absolute;
     right: 50px;
